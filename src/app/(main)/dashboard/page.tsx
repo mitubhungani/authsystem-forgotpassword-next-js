@@ -294,7 +294,7 @@ const Page = () => {
 
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button variant="outline" className="w-full mb-4">
+                  <Button variant="outline" className="w-full mb-4 cursor-pointer">
                     Change Password
                   </Button>
                 </DialogTrigger>
@@ -342,7 +342,7 @@ const Page = () => {
                     </div>
 
                     <DialogFooter>
-                      <Button type="submit" className="w-full">
+                      <Button type="submit" className="w-full cursor-pointer">
                         Save Changes
                       </Button>
                     </DialogFooter>
@@ -352,7 +352,7 @@ const Page = () => {
 
               <Button
                 onClick={handleLogout}
-                className="w-full mt-4 bg-red-600 hover:bg-red-700 text-white"
+                className="w-full mt-4 bg-red-600 hover:bg-red-700 text-white cursor-pointer"
               >
                 Logout
               </Button>

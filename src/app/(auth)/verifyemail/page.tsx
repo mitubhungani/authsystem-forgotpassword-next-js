@@ -57,7 +57,7 @@ const ForgotPassword = () => {
         ) : (
           <div className="text-center text-sm text-gray-600">
             <p>A password reset link has been sent to your email!</p>
-            <Button>
+            <Button className="cursor-pointer">
               Back to Login
             </Button>
           </div>

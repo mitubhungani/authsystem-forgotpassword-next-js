@@ -296,7 +296,7 @@ const Signup = () => {
                 {/* Submit Button */}
                 <Button
                   type="submit"
-                  className="w-full py-3 text-base font-medium"
+                  className="w-full py-3 text-base font-medium cursor-pointer"
                 >
                   Signup
                 </Button>

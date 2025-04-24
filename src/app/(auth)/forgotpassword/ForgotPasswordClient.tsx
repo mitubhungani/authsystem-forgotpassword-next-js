@@ -75,7 +75,7 @@ const ForgotPassword = () => {
             />
           </div>
 
-          <Button type="submit" className="w-full">
+          <Button type="submit" className="w-full cursor-pointer">
             Reset Password
           </Button>
         </form>

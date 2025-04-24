@@ -131,16 +131,18 @@ const Login = () => {
                 {/* Submit */}
                 <Button
                   type="submit"
-                  className="w-full py-3 text-base font-medium"
+                  className="w-full cursor-pointer py-3 text-base font-medium"
                 >
                   Login
                 </Button>
               </form>
             </Form>
 
-            <Button className="my-3">
+                    <div className="my-4 text-blue-600 text-end hover:underline">
+
               <Link href="/verifyemail">Forgot Password?</Link>
-            </Button>
+                    </div>
+          
 
             {/* Signup Link */}
             <p className="mt-8 text-center text-base text-gray-600"> 
