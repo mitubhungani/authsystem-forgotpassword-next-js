@@ -14,18 +14,20 @@ const ForgotPassword = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    
-    const existingUsers = JSON.parse(localStorage.getItem("signupUsers") || "[]")
+    const existingUsers = JSON.parse(
+      localStorage.getItem("signupUsers") || "[]"
+    );
     console.log(email);
-    
 
-    const userExists = existingUsers.find((user: { email: string }) => user.email === email);
+    const userExists = existingUsers.find(
+      (user: { email: string }) => user.email === email
+    );
     if (userExists) {
-        setIsEmailExist(true);
+      setIsEmailExist(true);
       toast.success("Email is Exists");
       router.push(`/forgotpassword?email=${encodeURIComponent(email)}`);
-    }else{
-        toast.error("Email is not Exists");
+    } else {
+      toast.error("Email is not Exists");
     }
   };
 
@@ -50,16 +52,12 @@ const ForgotPassword = () => {
               />
             </div>
 
-            <Button>
-              Confirm Email
-            </Button>
+            <Button>Confirm Email</Button>
           </form>
         ) : (
           <div className="text-center text-sm text-gray-600">
             <p>A password reset link has been sent to your email!</p>
-            <Button className="cursor-pointer">
-              Back to Login
-            </Button>
+            <Button className="cursor-pointer">Back to Login</Button>
           </div>
         )}
       </div>
